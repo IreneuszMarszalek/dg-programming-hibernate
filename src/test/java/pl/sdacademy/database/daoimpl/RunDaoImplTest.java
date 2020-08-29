@@ -62,7 +62,7 @@ void clearBeforeEach(){
     assertNotNull(runsList);
     assertEquals(2, runsList.size());
 
-    /*Run found1 = null;
+    Run found1 = null;
 
     if (runsList.get(0).getId() == run1.getId()) {
       found1 = runsList.get(0);
@@ -73,7 +73,7 @@ void clearBeforeEach(){
     assertNotNull(found1);
     assertEquals(run1.getId(), found1.getId());
     assertEquals(run1.getName(), found1.getName());
-    assertEquals(run1.getMembersLimit(), found1.getMembersLimit());*/
+    assertEquals(run1.getMembersLimit(), found1.getMembersLimit());
 
   }
   @Test

@@ -42,7 +42,6 @@ public class RunDaoImpl implements RunDao {
 	}catch(NoResultException e){
 
 	}
-
 	return run;
   }
 
@@ -52,6 +51,8 @@ public class RunDaoImpl implements RunDao {
 		.getInstance()
 		.getSessionfactory()
 		.getCurrentSession();
+
+	session.beginTransaction();
 
 	List<Run> list = session
 		.createQuery("from Run")
