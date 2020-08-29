@@ -22,10 +22,9 @@ public class HibernateUtils {
 		.build();
   }
 
-
   public static HibernateUtils getInstance() {
 	if(INSTANCE == null){
-	  INSTANCE = new HibernateUtils();
+	  INSTANCE = new HibernateUtils(); // lazy
 	}
 	return INSTANCE;
   }

@@ -39,10 +39,6 @@ void clearBeforeEach(){
   }
 
   @Test
-  void findByID () {
-  }
-
-  @Test
   void findAll () {
     RunDao dao = new RunDaoImpl();
     Run run1 = new Run();
