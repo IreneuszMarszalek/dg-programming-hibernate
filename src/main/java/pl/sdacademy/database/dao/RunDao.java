@@ -8,5 +8,5 @@ public interface RunDao {
   void save (Run run);
   Run findByID(Long id);
   List<Run> findAll();
-  void delete(Integer id);
+  void delete(Long id);
 }

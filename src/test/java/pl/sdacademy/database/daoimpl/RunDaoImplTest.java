@@ -78,5 +78,16 @@ void clearBeforeEach(){
   }
   @Test
   void delete () {
+    RunDao dao = new RunDaoImpl();
+    Run run = new Run();
+
+    run.setName("Wpis pierwotny");
+    run.setMembersLimit(100);
+
+    dao.save(run);
+    dao.delete(run.getId());
+    Run deleted = dao.findByID(run.getId());
+    assertNull(deleted);
+
   }
 }

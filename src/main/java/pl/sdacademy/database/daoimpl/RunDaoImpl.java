@@ -65,7 +65,7 @@ public class RunDaoImpl implements RunDao {
   }
 
   @Override
-  public void delete (Integer id) {
+  public void delete (Long id) {
 	Session session = HibernateUtils
 		.getInstance()
 		.getSessionfactory()
